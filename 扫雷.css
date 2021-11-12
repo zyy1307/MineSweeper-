@@ -10,6 +10,7 @@ body {
 
 * {
     box-sizing: border-box;
+    user-select: none;
 }
 
 li {
@@ -31,16 +32,24 @@ li {
     transform: translateX(-50%);
     background-color: #C0C0C0;
     padding: 10px;
+    border-top: 2px solid #FFF;
+    border-left: 2px solid #FFF;
+    border-bottom: 2px solid #808080;
+    border-right: 2px solid #808080;
 }
 
 .upperTab {
     width: 280px;
     height: 80px;
-    border: 1px solid #828282;
+    /* border: 1px solid #828282; */
     display: flex;
     justify-content: space-around;
     align-items: center;
     margin-bottom: 15px;
+    border-top: 4px solid #808080;
+    border-left: 4px solid #808080;
+    border-bottom: 4px solid #FFF;
+    border-right: 4px solid #FFF;
 }
 
 .timer {
@@ -48,32 +57,62 @@ li {
     height: 40px;
     font-size: 30px;
     text-align: center;
-    line-height: 40px;
+    line-height: 36px;
     color: red;
     background-color: black;
+    border-top: 2px solid #808080;
+    border-left: 2px solid #808080;
+    border-bottom: 2px solid #FFF;
+    border-right: 2px solid #FFF;
 }
 
 .smile {
     width: 30px;
     height: 30px;
-    border: 1px solid #FFF;
+    /* border: 1px solid #FFF; */
     text-align: center;
-    line-height: 30px;
+    line-height: 26px;
+    border-top: 2px solid #FFF;
+    border-left: 2px solid #FFF;
+    border-bottom: 2px solid #808080;
+    border-right: 2px solid #808080;
 }
 
 .sweepers {
-    width: 280px;
-    height: 300px;
     border: 1px solid #828282;
-    padding: 10px 3px;
+    width: 280px;
+    border-top: 4px solid #808080;
+    border-left: 4px solid #808080;
+    border-bottom: 4px solid #FFF;
+    border-right: 4px solid #FFF;
 }
 
-.sweepers span {
+.clearfix::after {
+    content: '';
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.init {
+    width: 27px;
+    height: 27px;
+    /* border: 2px solid #828282; */
+    border-top: 2px solid #FFF;
+    border-left: 2px solid #FFF;
+    border-bottom: 2px solid #808080;
+    border-right: 2px solid #808080;
+    float: left;
+    text-align: center;
+    line-height: 27px;
+}
+
+.mousedown {
     width: 27px;
     height: 27px;
     border: 1px solid #828282;
     float: left;
     text-align: center;
     line-height: 27px;
-    position: relative;
 }
